@@ -1,1 +1,7 @@
 *.log
+ReadWithMe/android/app/build/
+ReadWithMe/android/.idea/
+ReadWithMe/android/build/
+ReadWithMeOld/
+ReadWithMe/android/.gradle/4.1/fileHashes/fileHashes.bin
+ReadWithMe/android/.gradle/
