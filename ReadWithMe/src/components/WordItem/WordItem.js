@@ -2,8 +2,15 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 const wordItem = (props) => (
-    <View style={styles.wordItemContainer}>
-        <Text style={{color: props.color}}>{props.preSymbol}{props.wordText}{props.postSymbol}</Text>
+    <View style={{
+        backgroundColor: "white",
+        alignItems: "flex-start",
+        justifyContent: "flex-start",
+        borderColor: "black",
+        borderBottomWidth: props.borderBottomWidth,
+        borderRadius: 3
+    }}>
+        <Text style={{color: props.color, fontSize: 20}} onPress={props.onPress}>{props.preSymbol}{props.wordText}{props.postSymbol}</Text>
     </View>
 );
 
@@ -13,7 +20,8 @@ const styles = StyleSheet.create({
         alignItems: "flex-start",
         justifyContent: "flex-start",
         borderColor: "black",
-        borderWidth: 1
+        borderBottomWidth: 0,
+        borderRadius: 3
 
     }
 });
